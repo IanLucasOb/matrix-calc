@@ -6,6 +6,8 @@ enum DeterminatProperties {
   // LinesOrColumsProportional = "Duas linhas ou colunas proporcionais",
 }
 
+const { $pwa } = useNuxtApp();
+
 const order: Ref<number | null> = ref(null);
 const totalFields: Ref<number> = ref(0);
 const matrix: Ref<Array<Array<number>>> = ref([]);
@@ -185,6 +187,9 @@ const calculateLaPlace = () => {
               @click="generateMatrixFields"
               >OK</v-btn
             >
+          </v-col>
+          <v-col>
+            <v-btn @click="$pwa.install()">Install PWA</v-btn>
           </v-col>
         </v-row>
         <v-card-text class="px-3 pt-0 mb-5">

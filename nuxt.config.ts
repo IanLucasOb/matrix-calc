@@ -8,8 +8,33 @@ export default defineNuxtConfig({
     manifest: {
       name: "Matrix",
       short_name: "Mtx",
-      description: "Sistema para realizar cálculos envolvendo matrizes",
-      background_color: "#1234",
+      description: "Matrix calculator po",
+      background_color: "#AAA",
+      theme_color: "#3367D6",
+      // icons: [
+      //   {
+      //     src: "pwa-64x64.png",
+      //     sizes: "64x64",
+      //     type: "image/png",
+      //   },
+      //   {
+      //     src: "pwa-192x192.png",
+      //     sizes: "192x192",
+      //     type: "image/png",
+      //   },
+      //   {
+      //     src: "pwa-512x512.png",
+      //     sizes: "512x512",
+      //     type: "image/png",
+      //     purpose: "any",
+      //   },
+      //   {
+      //     src: "maskable-icon-512x512.png",
+      //     sizes: "512x512",
+      //     type: "image/png",
+      //     purpose: "maskable",
+      //   },
+      // ],
     },
   },
 });
